@@ -1,0 +1,751 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-left h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 4rem !important;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex !important;
+  gap: 2rem !important;
+}
+
+.nav-list li {
+  list-style: none;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Container for the hero section */
+
+.cart-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #8481ff, #2ef1fd 48.5%, #7292e4);
+}
+
+/* SVG wave effect */
+
+/* Inner content of the hero section */
+.hero-content {
+  color: white;
+  padding: 3rem;
+}
+.wave {
+  margin-top: -16rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f2f2f2;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row !important;
+  gap: 3rem;
+  margin-top: 30px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: rgb(116, 113, 113);
+  padding: 10px 20px;
+}
+/* slider css */
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7rem;
+  z-index: 1 !important;
+}
+
+.main .left p {
+  width: 25rem;
+  color: rgb(108, 107, 107) !important;
+}
+.slider-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+  background-color: white !important;
+  border-radius: 1rem;
+}
+.slide {
+  color: black;
+  text-align: center;
+}
+
+.slide img {
+  height: 50vh !important;
+  padding: 1rem;
+  border-radius: 2rem !important;
+  width: 25rem;
+}
+
+.nav-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  background: rgb(147, 147, 235);
+  padding: 5px;
+  border: none;
+  width: 2rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #005f7f;
+}
+
+.dot-container {
+  text-align: center;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* section-2 */
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  text-align: center;
+  color: gray;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+span h3 {
+  font-size: 1.5rem;
+}
+
+/* dropdown */
+
+.filter {
+  display: flex;
+  gap: 5rem;
+  padding: 3rem;
+}
+
+.dropdown {
+  position: relative;
+  width: 200px;
+}
+
+.dropdown-btn {
+  width: 100%;
+  color: black;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 1s;
+}
+
+.dropdown-btn:hover {
+  background-color: white;
+}
+
+.dropdown-icon {
+  margin-left: 10px;
+  transition: transform 1s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 1s ease, visibility 1s ease, transform 1s ease;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* dropdown-2 */
+
+.dropdown-2 {
+  position: relative;
+  width: 200px;
+}
+
+.dropdown-btn-2 {
+  width: 100%;
+  color: black;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 1s;
+}
+
+.dropdown-btn-2:hover {
+  background-color: white;
+}
+
+.dropdown-icon-2 {
+  margin-left: 10px;
+  transition: transform 1s;
+}
+
+.dropdown-menu-2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 1s ease, visibility 1s ease, transform 1s ease;
+}
+
+.dropdown-menu-2.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu-2 li {
+  padding: 10px 15px;
+}
+
+.dropdown-menu-2 li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-menu-2 li a:hover {
+  background-color: #f1f1f1;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* produsts css */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.items {
+  border: 1px solid rgb(194, 185, 185);
+  border-radius: 30px;
+  width: 18rem;
+  height: 24rem;
+  text-align: center;
+  padding: 5px;
+}
+
+.items:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 1s;
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.buy-now-btn {
+  border: 1px solid blue;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.prices {
+  color: blue;
+  font-weight: bolder;
+}
+
+.buy-now-btn:hover {
+  background-color: rgb(138, 138, 239);
+  color: white;
+}
+
+.view-all-btn {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(162, 162, 255);
+  font-size: 13px;
+  font-weight: bolder;
+  color: rgb(119, 119, 245);
+  margin: auto;
+  width: 9rem;
+}
+
+.view-all-btn:hover {
+  background-color: rgb(125, 125, 248);
+  color: white;
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem;
+  justify-content: space-between;
+}
+
+.content-left {
+  text-align: end;
+}
+
+.buy-now-btn {
+  border: 1px solid blue;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 1rem;
+  width: 5rem;
+  padding: 1rem;
+  width: 10rem;
+  text-align: center;
+  border-radius: 3rem;
+  margin-left: auto !important;
+  color: blue;
+}
+
+.heading {
+  color: #005f7f;
+}
+
+.best-price {
+  color: #005f7f;
+  font-size: 1.9rem;
+}
+.content-left {
+  width: 35rem;
+}
+.descount {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.net-price {
+  color: red;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.container {
+  position: relative;
+  width: 400px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-circle {
+  position: absolute;
+  width: 400px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  background: radial-gradient(circle, white 50%, rgb(201, 198, 198));
+  border-radius: 50%;
+}
+
+.middle-circle {
+  position: absolute;
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  background-color: white;
+  border-radius: 50%;
+}
+
+.inner-circle {
+  position: absolute;
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  background-color: #f4f4f4;
+  border-radius: 50%;
+}
+
+.center-image {
+  position: absolute;
+  width: 150px;
+  height: auto;
+}
+
+.svg {
+  margin-top: -12rem;
+}
+
+/* media quary for mobile */
+
+@media only screen and (max-width: 767px) {
+  .nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+  .nav-right {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1rem !important;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .wave {
+    display: none !important;
+  }
+  .right {
+    display: none !important;
+  }
+  .hero-section {
+    height: 85vh !important;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    width: 19rem !important;
+  }
+  .filter {
+    display: flex;
+    flex-direction: row !important;
+    gap: 0.5rem !important;
+    padding: 1px !important;
+    margin-top: 3rem;
+  }
+  .dropdown-text {
+    font-size: 13px !important;
+  }
+  .dropdown-text-2 {
+    font-size: 13px !important;
+  }
+  .svg {
+    display: none;
+  }
+  .container {
+    display: none;
+  }
+  .section-3 {
+    padding: 0px !important;
+  }
+
+  .items {
+    height: 27rem !important;
+  }
+
+  .view-all-btn {
+    margin-bottom: 3rem;
+  }
+
+  .best-price {
+    color: #005f7f;
+    font-size: 1.9rem;
+    margin-top: 5rem;
+  }
+  .content-left {
+    width: 100% !important;
+    background: linear-gradient(135deg, #8481ff, #7fccd1 48.5%, #e47272);
+    padding: 1;
+  }
+
+  .para {
+    text-align: center !important;
+    color: white;
+    font-size: 1.2rem;
+    width: 100% !important;
+  }
+  .net-price {
+    color: red;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .descount {
+    color: #5614e3;
+  }
+
+  .buy-now-btn {
+    margin-top: 3rem !important;
+    margin-bottom: 5rem !important;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+
+  .content-left {
+    text-align: center;
+  }
+
+  .buy-now-btn {
+    border: 1px solid blue;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 1rem;
+    width: 5rem;
+    padding: 1rem;
+    width: 10rem;
+    text-align: center;
+    border-radius: 3rem;
+    margin: auto;
+    color: blue;
+  }
+}
+
+/* for tablates */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+  .nav-right {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1rem !important;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .wave {
+    display: none !important;
+  }
+  .right {
+    display: none !important;
+  }
+  .hero-section {
+    height: 100vh !important;
+  }
+
+  .main {
+    padding: 1px !important;
+    width: 100% !important;
+    margin-top: 20rem !important;
+    text-align: center !important;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    width: 100% !important;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    width: 100% !important;
+  }
+  .filter {
+    display: flex;
+    flex-direction: row !important;
+    gap: 3rem !important;
+    padding: 1px !important;
+    margin-top: 3rem;
+  }
+  .dropdown-text {
+    font-size: 15px !important;
+  }
+  .dropdown-text-2 {
+    font-size: 15px !important;
+  }
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+  }
+  .section-2 {
+    margin-top: 20rem !important;
+  }
+
+  .items {
+    height: 27rem !important;
+  }
+
+  .section-3 {
+    padding: 0px !important;
+    margin-top: 5rem;
+  }
+
+  .svg {
+    display: none;
+  }
+  .container {
+    display: none;
+  }
+  .best-price {
+    color: #005f7f;
+    font-size: 1.9rem;
+    margin-top: 5rem;
+  }
+  .content-left {
+    width: 100% !important;
+    background: linear-gradient(135deg, #8481ff, #7fccd1 48.5%, #e47272);
+    padding: 3rem !important;
+  }
+
+  .para {
+    text-align: center !important;
+    color: white;
+    font-size: 1.2rem;
+    width: 100% !important;
+  }
+  .net-price {
+    color: red;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .descount {
+    color: #5614e3;
+  }
+
+  .buy-now-btn {
+    margin-top: 3rem !important;
+    margin-bottom: 5rem !important;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+
+  .content-left {
+    text-align: center;
+  }
+
+  .buy-now-btn {
+    border: 1px solid blue;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 1rem;
+    width: 5rem;
+    padding: 1rem;
+    width: 10rem;
+    text-align: center;
+    border-radius: 3rem;
+    margin: auto;
+    color: blue;
+  }
+}
